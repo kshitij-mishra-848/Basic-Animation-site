@@ -1,0 +1,123 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#background{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background: fixed;
+
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #22bbfd;
+    border-radius: 30px;
+    box-shadow: 0px 0px 11px 2px rgb(0, 0, 0);
+    margin: 20px;
+    padding: 0px 42px;
+
+}
+#navbar h1{
+    font-size: 64px;
+    color: white;
+    text-shadow: 5px 3px 4px black;
+}
+#navbar #logo img{
+    width: 112px;
+    mix-blend-mode: multiply;
+}
+
+section #img1{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 514px;
+} /*transform: scaleX(-1)*/
+
+section #img2{
+    display: block;
+    content: "";
+    position: absolute;
+    /* top: 138px; */
+    top: 40px;
+    left: 40px;
+    width: 310px;
+    transform: scaleX(-1)
+}
+
+.container{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    /* padding: 12px; */
+    width: 60%;
+    background-color: #00000056;
+    box-shadow: 0px 0px 20px 4px black;
+}
+
+.container1 h1{
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+    color: #fff;
+    font-size: 85px;
+    grid-area: h1;
+    text-shadow: 3px 3px 3px black;
+    text-decoration: underline;
+    text-underline-position:unset ;
+}
+
+.container2{
+    display: grid;
+    grid-template-areas: 
+    'img para';
+}
+
+/* .container2 img{
+    padding-left: 10%;
+    width: 80%;
+    grid-area: img;
+    border-radius: 14px;
+    opacity: 0.8;
+} */
+
+.container2 p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    grid-area: para;
+    padding: 33px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: black;
+}
+
+footer strong{
+    color: white;
+}

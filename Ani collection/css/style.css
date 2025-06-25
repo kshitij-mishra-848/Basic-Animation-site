@@ -1,0 +1,130 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header section */
+
+header::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff52;
+    border-radius: 30px;
+    box-shadow: 0px 0px 11px 2px white;
+    margin: 20px;
+    padding: 0px 42px;
+}
+
+#h-1{
+    font-size: 64px;
+    color: white;
+    text-shadow: 5px 3px 4px black;
+    /* font-family: "Dancing Script", cursive; */
+    /* font-weight: bold; */
+    /* font-family: "Lobster", sans-serif; */
+    /* font-family: "Sedgwick Ave Display", cursive; */
+    /* font-family: "Rock Salt", cursive; */
+}
+
+#logo img{
+    width: 112px;
+    mix-blend-mode: multiply;
+}
+
+#s-1{
+    display: grid;
+    grid-gap: 1rem;
+    padding: 55px 0px;
+    padding-bottom: 0px;
+    background-color: black;
+    grid-template-areas: 
+    'image-1 image-2 image-3 image-4 image-5'
+    'image-6 image-7 image-8 image-9 image-10';
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.image img{
+    height: 419px;
+    width: 260px;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    box-shadow: 6px 6px 7px 4px white;
+    cursor: pointer;
+}
+.image img:hover{
+    /* box-shadow: none; */
+    cursor: pointer;
+    box-shadow: 4px 4px 7px 0px white;
+    transition: 0.2s;
+} 
+
+#image-1{
+    grid-area: image-1;
+}
+
+#image-2{
+    grid-area: image-2;
+}
+#image-3{
+    grid-area: image-3;
+}
+#image-4{
+    grid-area: image-4;
+}
+#image-5{
+    grid-area: image-5;
+}
+#image-6{
+    grid-area: image-6;
+        padding: 55px 0px;
+}
+#image-7{
+    grid-area: image-7;
+        padding: 55px 0px;
+}
+#image-8{
+    grid-area: image-8;
+        padding: 55px 0px;
+}
+#image-9{
+    grid-area: image-9;
+        padding: 55px 0px;
+}
+#image-10{
+    grid-area: image-10;
+        padding: 55px 0px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: black;
+}
+
+footer strong{
+    color: white;
+}

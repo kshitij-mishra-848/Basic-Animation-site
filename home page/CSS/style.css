@@ -1,0 +1,174 @@
+/* CSS RESET */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navbar section */
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: -2;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+
+#navbar h1 {
+    font-size: 94px;
+    font-family: "Lugrasimo", cursive;
+    /* font-family: "Pacifico", cursive; */
+    color: red;
+    padding: 43px 49px;
+    text-shadow: 3px 3px 6px black;
+    font-weight: bold;
+}
+
+#navbar p {
+    padding-left: 32px;
+    font-size: 67px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 94px;
+    left: 204px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    left: 234px;
+    font-weight: bold;
+    /* color: #111; */
+    color: whitesmoke;
+
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 28px;
+}
+
+#navbar ul li {
+    margin: 30px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 12px;
+    font-size: 40px;
+    font-weight: bold;
+    /* font-family: "Jacquard 24", system-ui; */
+    font-family: "Sofia", sans-serif;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+}
+
+#navbar ul li a:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    text-underline-position: under;
+    transition: 0.5s;
+    /* font-family: "Jersey 25", sans-serif; */
+    font-family: "Sofia", sans-serif;
+    font-weight: weight;
+}
+
+#s-1 {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 53px;
+    margin: 22px;
+}
+
+#s-1 h1 {
+    display: flex;
+    font-size: 85px;
+    margin: 30px;
+    color: rgb(206, 30, 30);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 3px 3px 6px black;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: "Permanent Marker", cursive;
+}
+
+#s-1 #p-1 {
+    font-size: 42px;
+    padding: 0px 30px;
+    font-weight: bold;
+    color: rgb(255, 224, 224);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+#s-1 #p-2 {
+    /* font-size: 15px; */
+    padding: 10px 30px;
+    font-size: 27px;
+    color: white;
+    width: 47%;
+    text-shadow: 2px 2px 3px black;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    margin: 22px;
+    justify-content: center;
+    font-size: 28px;
+    padding: 13px 31px;
+    background-color: rgb(0 0 0 / 16%);
+    /* box-shadow: 2px 2px 3px black; */
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 12px;
+}
+
+.btn:hover{
+    /* box-shadow: 2px 2px 6px rgb(255, 255, 255); */
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1548px){
+    #navbar p{
+    position: absolute;
+    top: 94px;
+    left: 204px;
+    }
+    #navbar ul li{
+        margin: 21px;
+    }
+}
+
+@media only screen and (max-width:1548)and(min-width:1334){
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: black;
+}
+
+footer strong{
+    color: white;
+}
